@@ -1,0 +1,13 @@
+fg()
+{
+	kill(i,SIGSTOP);
+	kill(i,SIGCONT);
+	waitpid(-1,NULL,WUNTRACED);
+}
+
+bg()
+{
+	kill(i,SIGCONT);
+}
+
+i => pid hai wo nikal lena jaise bhi store kiya hai tune
